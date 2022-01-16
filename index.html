@@ -2,34 +2,51 @@
 <html>
 <head>
     <title>SF Pet Adoption Service</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="home">
 
 <!-- container to wrap -->
 <div id="container">
 <!-- brand of website -->
-<header>Welcome, meet your buddies!</header>
-<!-- main navigation -->
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page2.html">Pet Gallery</a></li>
-        <li><a href="page3.html">Contact</a></li>
-    </ul>
-</nav> <!-- end main navigation -->
-
+<header>
+<!-- Start main header -->
+    <div class="main-header">
+        <h2>Welcome, meet your buddies!</h2>
+        <!-- start main navigation -->
+        <nav class="main-menu">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Pet Gallery</a></li>
+                <li><a href="page3.html">Contact</a></li>
+            </ul>
+        </nav> <!-- end main navigation -->
+</div> <!-- End main header -->
+</header>
 <!-- main content -->
 <main>
     <h1>SF Pet Adoption Service</h1>
     <p>We are here to connect you and your buddies.</p>
-    <ul>
-        <li>Dog</li>
-        <li>Cat</li>
-        <li>Bird</li>
-        <li>Small Pet</li>
-    </ul>
 </main> <!-- end main content -->
 
+<!-- start section -->
+<section>
+    <ul id="animals" >
+        <li class="animal">
+            <img src="images/animals/dog_icon.png" alt="Dogs">Dogs
+        </li>
+        <li class="animal">
+            <img src="images/animals/cat_icon.png" alt="Cats">Cats
+        </li>
+        <li class="animal">
+            <img src="images/animals/bird_icon.png" alt="Birds">Birds
+        </li>
+        <li class="animal">
+            <img src="images/animals/fish_icon.png" alt="Small Pets">Small Pets
+        </li>       
+    </ul>
+</section>
 <!-- footer information -->
 <footer>&copy; Copyright 2022</footer>
 

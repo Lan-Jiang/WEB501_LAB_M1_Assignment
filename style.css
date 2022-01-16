@@ -1,0 +1,96 @@
+/* Start external CSS */
+/* Header */
+header {
+    width: 100%;
+    min-height: 200px;
+    padding-top: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home header {
+    background: no-repeat lightgrey ;
+    background-size: 1500px;
+}
+#home header h2{
+    padding-left: 40px;
+    color: plum;
+}
+
+/* Nevigation */
+#home .main-menu {
+    /* margin-left: 227px; */
+    display: flex;
+    justify-content: start;
+    font-weight: 400;
+}
+#home .main-menu ul li {
+    background: rgba(135,235, 250, 0.8);
+    list-style-type: none;
+    display: inline;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -16px; /* when introduce flex, some value need to manual adjust*/
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color:#888; /* Mouse over */
+}       
+.main-menu ul li a:hover {
+    color:#9ed034; /* Mouse over */
+}
+.main-menu ul li.active {
+    background: purple;
+    border: none; 
+}   
+.main-menu ul li.active a {
+    color: darkgreen;
+}  
+
+/* Main */
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3em auto auto 3em;
+}
+/* Section */
+#home section {
+    background: rgba(135,235, 250, 0.8);
+    padding: 80px 50px;
+}
+section #animals {
+    width: 100%;
+    padding: 2em 0 2em 0;
+    margin: 0 auto;
+    text-align: center;
+}
+section #animals .animal {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+section #animals .animal img {
+    width: 90px;
+    height: 90px;
+}
+
+
+
+/* Footer */
+footer {
+    background: lightcyan;
+    width: 100%;
+    padding:80px 50px;
+}
+
+
+
+
+
+
+
