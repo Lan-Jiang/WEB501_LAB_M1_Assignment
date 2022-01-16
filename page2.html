@@ -2,34 +2,52 @@
 <html>
 <head>
     <title>SF Pet Adoption Service</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="gallery">
 
 <!-- container to wrap -->
 <div id="container">
 <!-- brand of website -->
-<header>Welcome, meet your buddies!</header>
-<!-- main navigation -->
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page2.html">Pet Gallery</a></li>
-        <li><a href="page3.html">Contact</a></li>
-    </ul>
-</nav> <!-- end main navigation -->
-
+<header>
+    <!-- Start main header -->
+        <div class="main-header">
+            <h2>Welcome, meet your buddies!</h2>
+            <!-- start main navigation -->
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="page2.html">Pet Gallery</a></li>
+                    <li><a href="page3.html">Contact</a></li>
+                </ul>
+            </nav> <!-- end main navigation -->
+        </div> <!-- End main header -->
+    </header>
 <!-- main content -->
 <main>
     <h1>Pet Gallery</h1>
     <p>Meet your buddies.</p>
     <table>
+        <caption>Gallery</caption>
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th>Name</th>
+                <th>Self introduction</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td><img src="images/dog.jpeg" alt="Dog" width = "300" /></td>
+                <td>Brown</td>
+                <td>I am 1-yr old boy. I like play with friends.</td>
                 <td>Dog adoption, pleace contact XXXX@XXX.com.</td>
             </tr>
             <tr>
                 <td><img src="images/cat.jpeg" alt="Cat" width = "300" /></td>
+                <td>Grey</td>
+                <td>I am 3-month old girl. My best friend is the wool ball.</td>
                 <td>Cat adoption, pleace contact XXXX@XXX.com.</td>
             </tr>
         </tbody>

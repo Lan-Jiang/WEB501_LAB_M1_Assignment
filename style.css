@@ -14,15 +14,20 @@ header {
     padding-left: 40px;
     color: plum;
 }
+#gallery header {
+    background: no-repeat lightgrey ;
+    background-size: 1500px;
+}
+
 
 /* Nevigation */
-#home .main-menu {
+.main-menu {
     /* margin-left: 227px; */
     display: flex;
     justify-content: start;
     font-weight: 400;
 }
-#home .main-menu ul li {
+.main-menu ul li {
     background: rgba(135,235, 250, 0.8);
     list-style-type: none;
     display: inline;
@@ -48,7 +53,7 @@ header {
     border: none; 
 }   
 .main-menu ul li.active a {
-    color: darkgreen;
+    color: #fff;
 }  
 
 /* Main */
@@ -78,8 +83,21 @@ section #animals .animal img {
     width: 90px;
     height: 90px;
 }
-
-
+/* Table */
+table {
+    width:1200px;
+    display: block;
+    border: solid 2px rgba(202, 204, 202, 0.6);
+    text-align: center;
+}
+caption {
+    background: rgba(202, 204, 202, 0.6);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+thead {
+    background: rgba(202, 204, 202, 0.4);
+}
 
 /* Footer */
 footer {
