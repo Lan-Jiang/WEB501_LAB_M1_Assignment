@@ -18,6 +18,18 @@ header {
     background: no-repeat lightgrey ;
     background-size: 1500px;
 }
+#gallery header h2{
+    padding-left: 40px;
+    color: plum;
+}
+#contact header {
+    background: no-repeat lightgrey ;
+    background-size: 1500px;
+}
+#contact header h2{
+    padding-left: 40px;
+    color: plum;
+}
 
 
 /* Nevigation */
@@ -106,6 +118,75 @@ footer {
     padding:80px 50px;
 }
 
+/* Start contact form */
+form {
+    width: 1000px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+fieldset {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+legend {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#4977D1;
+    margin-left: -20px;
+}
+input {
+    display: block;
+}
+input[type="text"] {
+    width: 300px;
+}
+input[type="email"] {
+    width: 300px;
+}
+input[type="radio"] {
+    display: inline-block;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+input[type="submit"] {
+    background: #4977D1;
+    color:#fff;
+}
+label {
+    font-weight: bold;
+    /* margin-top: 5px; */
+} /*? padding*/
+form .textbox input {
+    margin-bottom: 10px;
+    font-size:10px;
+} /* select the right selector to apply changes*/
+form .selectmenu select {
+    margin-bottom: 15px;
+    width: 130px;
+    text-align: center;
+}
+form .commentbox label {
+    display: block;
+}
+form .commentbox textarea {
+    width: 300px;
+    height:100px;   
+}
+form .button {
+    margin: 10px auto 20px 200px;
+    border: none;
+    outline: none;
+}
+form .button input {
+    width: 105px;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+/* End contact form */
 
 
 
