@@ -188,8 +188,59 @@ form .button input {
 
 /* End contact form */
 
+/* Start photo gallery */
+#photos {
+    background: lightgray;
+    width: 100%;
+    margin-top: 30px;
+}
+#photos ul li {
+    display: inline-block;
+}
+#photos li .photo {
+    padding-top: 10px;
+    width: 100%;
+    display: inline-block;
+}
+#photos .photo p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#photos .photo .description{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    top:200px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#photos .photo img {
+    width: auto;
+    height: 300px;
+}
+
+#photos .photo img:hover{
+    cursor: pointer;
+}
+#photos .photo:hover .description{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    top:200px;
+    background: #fff;
+    opacity: 0.75;
+    visibility: visible;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
 
 
+
+/* Start photo gallery */
 
 
 
