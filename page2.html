@@ -57,34 +57,82 @@
 </main> <!-- end main content -->
 
 <!-- Start photo gallery -->
-<div id="photos">
-    <ul>
-        <li class="photo">
+<div>
+    <ul id="photos">
+        <!--<li class="photo">
             <p class="description">Vince likes treats.</p>
             <img src="images/dog1.jpeg" alt="">
             <p class="caption">Vince, 16 months</p>
         </li>
         <li class="photo">
-            <p class="description">Teddy likes run.</p>
-            <img src="images/dog2.jpeg" alt="" >
-            <p class="name">Teddy, 3 months</p>
-
-        </li>
+            <p class="description">Vince likes treats.</p>
+            <img src="images/dog2.jpeg" alt="">
+            <p class="caption">Vince, 16 months</p>
+        </li>-->
     </ul>
 </div>
 <!-- End photo gallery -->
 
 <p>Images thanks to Pexels - Gilberto Reyes & Pexels - Cats Coming for free use.
     Photo by <a href="https://unsplash.com/@luipeng?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lui Peng</a> 
-    Photo by <a href="https://unsplash.com/photos/brFsZ7qszSYon"> B</a> 
+    Photo by <a href="https://unsplash.com/photos/brFsZ7qszSYon"></a> 
     Photo by <a href="https://unsplash.com/photos/yihlaRCCvd4"></a> 
     Photo by <a href="https://unsplash.com/photos/WX4i1Jq_o0Y"></a> 
-    Photo by <a href="https://unsplash.com/photos/NE0XGVKTmcA"></a> on <a href="https://unsplash.com/s/photos/dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    Photo by <a href="https://unsplash.com/photos/NE0XGVKTmcA"></a> 
+    Photo by <a href="https://unsplash.com/@alxndr_london?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander London</a> 
+    Photo by <a href="https://unsplash.com/@alvannee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alvan Nee</a> 
+    Photo by <a href="https://unsplash.com/@michaelsum1228?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Sum</a> 
+    Photo by <a href="https://unsplash.com/@ejleusink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik-Jan Leusink</a> on <a href="https://unsplash.com/s/photos/dog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 <!-- footer information -->
 <footer>&copy; Copyright 2022</footer>
 
 </div> <!-- end container -->
+
+<!-- Start photo gallery js-->
+<script>
+    // var photoList = ["dog1", "dog2", "dog3", "dog4", "dog5"];
+    var captionTexts = ["Vince, 16 months", "Teddy, 3 months", "Victor, 5 months",
+                        "Uni, 9 months", "Meatball, 12 months"
+                        ,"Meme, 3 years" , "Flur, 1 year", "Lia, 14 months", "Cath, 9 months", "CC, 16 months  " ]
+    var descTexts = ["Vince likes treats", "Teddy likes play", "Victor likes hugging", "Uni likes sea", "Meatball likes sunshine"
+                        ,"Meme likes wool ball", "Flur likes cans", "Lia likes snow", "Cath likes apple", "CC likes napping"]
+    var photos = [];
+    var fileNames = [];
+    var imagefileNames = [];
+    var imageList = [];
+    var image;
+    var captions =[];
+    var descriptions = [];
+    var openList = "<li class='photo'>";
+    var closeList = "</li>";
+    var openDescTag = "<p class='description'>";
+    var closeDescTag = "</p>";
+    var openCaptionTag = "<p class='caption'>";
+    var closeCaptionTag = "</p>";
+
+    //Create a loop to create 10 images
+    for (var i=0; i<10; i++) {
+        if (i>=0 && i <=4) {
+            fileNames.push("dog" + [i+1]);
+            photos.push("<img src = 'images/" +fileNames[i]+ ".jpeg' alt=''>");//  
+            captions.push(openCaptionTag + captionTexts[i] + closeCaptionTag);
+            descriptions.push(openDescTag + descTexts[i] + closeDescTag);  
+            image = openList + descriptions[i] + photos[i] + captions[i] + closeList;        
+            imageList.push(image);
+        } else if (i>=5 && i<10) {
+            fileNames.push("cat" + [i-4]);
+            photos.push("<img src = 'images/" +fileNames[i]+ ".jpeg' alt=''>");//  
+            captions.push(openCaptionTag + captionTexts[i] + closeCaptionTag);
+            descriptions.push(openDescTag + descTexts[i] + closeDescTag);  
+            image = openList + descriptions[i] + photos[i] + captions[i] + closeList;        
+            imageList.push(image);
+        }
+        //Display 10 images from array
+        document.getElementById("photos").innerHTML = imageList.join(" ");
+    } 
+
+</script><!-- End photo gallery js-->
 
 </body>
 </html>
