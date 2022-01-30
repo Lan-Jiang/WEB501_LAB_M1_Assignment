@@ -68,7 +68,7 @@ function showinfoBox(i) {
 
 //
 var closeInfo = document.getElementById("closeInfo");
-closeInfo.addEventListener("click", hideinfoBox)
+closeInfo.addEventListener("click", hideinfoBox);
 
 function hideinfoBox() {
     document.getElementById("infoBox").style.visibility = 'hidden';
