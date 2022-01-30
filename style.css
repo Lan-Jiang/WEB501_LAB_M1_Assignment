@@ -144,11 +144,10 @@ input[type="text"] {
 input[type="email"] {
     width: 300px;
 }
-input[type="radio"] {
-    display: inline-block;
+/* input[type="dropdown"] {
     font-size: 10px;
     margin-bottom: 15px;
-}
+} */
 input[type="submit"] {
     background: #4977D1;
     color:#fff;
@@ -166,8 +165,20 @@ form .selectmenu select {
     width: 130px;
     text-align: center;
 }
+form .dropdown label {
+    display: block;
+}
+form .dropdown input[type="text"] {
+    width: 300px;
+    margin-top: -10px;
+}
+form .contact {
+    margin-bottom: 10px;
+    font-size: 10px;
+}
 form .commentbox label {
     display: block;
+    margin-top: 10px;
 }
 form .commentbox textarea {
     width: 300px;

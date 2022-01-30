@@ -5,7 +5,7 @@
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="contact">
+<body id="contact" onload="hidecontactBox()">
 
 <!-- container to wrap -->
 <div id="container">
@@ -35,21 +35,28 @@
             <div class="textbox">
             <label>Enter your full name</label>
             <input type = "text" name = "name">
-            <label>Enter your email</label>
+            <!-- <label>Enter your email</label>
             <input type = "email" name = "email">   
             <label>Enter your phone</label>
-            <input type = "text" name = "phone">
+            <input type = "text" name = "phone"> -->
             </div>
             
-            <div class="radios">
-            <label>How should we contact you?</label>
-            <input type = "radio" name = "contact" value = "email"/>Email
-            <input type = "radio" name = "contact" value = "phone"/>Phone 
+            <div class="dropdown">
+                <label>How should we contact you?</label>
+                <select id="contactMethod" name="contact">
+                    <option class="contactoption" value="email">Email</option>
+                    <option class="contactoption" value="selectone">Select One</option>
+                    <option class="contactoption" value="phone">Phone</option>
+                </select>
+                <div id="contactBox">
+                    <!-- <label>Enter your email</label>
+                    <input type = "text" name = "phone"> -->
+                </div>
             </div> 
 
             <div class="commentbox">
                 <label>How did you hear about us:</label>
-            <textarea rows="5" cols="30"></textarea>
+                <textarea rows="5" cols="30"></textarea>
             </div>
 
             <div class="button">
@@ -63,5 +70,11 @@
 <footer>&copy; Copyright 2022</footer>
 
 </div> <!-- end container -->
+
+<!-- Contact Box JS-->
+<script src="js/contactbox.js"></script>
+
+
+
 </body>
 </html>
