@@ -189,10 +189,14 @@ form .button input {
 /* End contact form */
 
 /* Start photo gallery */
+#gallery {
+    position: relative;
+}
 ul#photos {
     background: lightgray;
     width: 100%;
     margin-top: 30px;
+    position: relative;
 }
 #photos li {
     display: inline-block;
@@ -247,6 +251,17 @@ ul#photos {
     visibility: visible;
     -webkit-transition: visibility 0s, opacity 0.5s linear; 
     transition: visibility 0s, opacity 0.5s linear;
+}
+
+#infoBox {
+    background: darkgrey;
+    opacity: 0.95;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    left: 20%;
+    visibility: hidden; 
 }
 
 

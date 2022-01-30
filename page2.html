@@ -57,7 +57,7 @@
 </main> <!-- end main content -->
 
 <!-- Start photo gallery -->
-<div>
+<div id="gallery">
     <ul id="photos">
         <!--<li class="photo">
             <p class="description">Vince likes treats.</p>
@@ -70,6 +70,11 @@
             <p class="caption">Vince, 16 months</p>
         </li>-->
     </ul>
+    <div id="infoBox">
+        <div id="title" >CC 16 MONTHS</div>
+        <div id="info"> LIKE THE GOLDEN RETRIEVER </div>
+        <div id="closeInfo" onclick="hideinfoBox()">CLICK TO CLOSE</div>
+    </div>
 </div>
 <!-- End photo gallery -->
 
@@ -106,7 +111,7 @@
     var descriptions = [];
     var openList = "<li class='photo'>";
     var closeList = "</li>";
-    var openDescTag = "<p class='description'>";
+    var openDescTag = "<p class='description' onClick='showinfoBox()'>";
     var closeDescTag = "</p>";
     var openCaptionTag = "<p class='caption'>";
     var closeCaptionTag = "</p>";
@@ -133,6 +138,18 @@
     } 
 
 </script><!-- End photo gallery js-->
+
+<!-- Start infoBox-->
+<script>
+function showinfoBox() {
+    document.getElementById("infoBox").style.visibility = 'visible';
+};
+
+function hideinfoBox() {
+    document.getElementById("infoBox").style.visibility = 'hidden';
+};
+
+</script><!-- End infoBox-->
 
 </body>
 </html>
