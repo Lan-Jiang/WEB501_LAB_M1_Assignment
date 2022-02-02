@@ -168,13 +168,17 @@ form .selectmenu select {
 form .dropdown label {
     display: block;
 }
-form .dropdown input[type="text"] {
-    width: 300px;
-    margin-top: -10px;
-}
-form .contact {
+form #contactMethod {
     margin-bottom: 10px;
     font-size: 10px;
+}
+form #contactBox label {
+    width: 300px;
+    margin-bottom:2px;
+}
+
+form #contactBox input {
+    width: 300px;
 }
 form .commentbox label {
     display: block;

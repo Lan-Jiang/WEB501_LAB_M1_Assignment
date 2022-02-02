@@ -43,10 +43,10 @@
             
             <div class="dropdown">
                 <label>How should we contact you?</label>
-                <select id="contactMethod" name="contact">
-                    <option class="contactoption" value="email">Email</option>
-                    <option class="contactoption" value="selectone">Select One</option>
-                    <option class="contactoption" value="phone">Phone</option>
+                <select id="contactMethod" name="contact" onChange="evaluateOption()">
+                    <option id="selectone" value="selectone">Select One</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
                 </select>
                 <div id="contactBox">
                     <!-- <label>Enter your email</label>
