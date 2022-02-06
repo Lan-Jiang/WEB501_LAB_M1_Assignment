@@ -15,9 +15,8 @@ $(document).ready(function(){
         var $altvalue = $(this).attr('alt');
         //$('.box').append($altvalue);
 
-
-        var $imageListaltvalue = imageList[0].find('img').attr('alt');
-        $('.box').append($imageListaltvalue);
+        var $imgsrc = $(this).attr('src')
+        $('.box').append("<img src='" + $imgsrc + "'>");
         // if ($altvalue=="dog1") {
         //     //var img = $('#photos:nth-child(1) img').clone(); //Duplicate DOM element
         //     $('.box').append('<img src="images/dog1.jpeg" alt="">'); //Insert duplicated element in another element
