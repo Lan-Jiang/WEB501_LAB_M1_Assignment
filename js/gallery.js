@@ -38,20 +38,21 @@ var closeDescTag = "</p>";
 for (var i=0; i<10; i++) {
     if (i>=0 && i <=4) {
         fileNames.push("dog" + [i+1]);
-        photos.push("<img src = 'images/" +fileNames[i]+ ".jpeg' alt=''>");//  
+        photos.push("<img src = 'images/" +fileNames[i]+ ".jpeg' alt='" + "dog" +[i+1] + "'>");//  
         captions.push(openCaptionTag + captionTexts[i] + closeCaptionTag);
         descriptions.push(openDescTag + [i] + openDescClose + descTexts[i] + closeDescTag);  
         image = openList + descriptions[i] + photos[i] + captions[i] + closeList;        
         imageList.push(image);
     } else if (i>=5 && i<10) {
         fileNames.push("cat" + [i-4]);
-        photos.push("<img src = 'images/" +fileNames[i]+ ".jpeg' alt=''>");//  
+        photos.push("<img src = 'images/" +fileNames[i]+ ".jpeg' alt='" + "cat" +[i-4] + "'>");//  
         captions.push(openCaptionTag + captionTexts[i] + closeCaptionTag);
         descriptions.push(openDescTag + [i] + openDescClose + descTexts[i] + closeDescTag);  
         image = openList + descriptions[i] + photos[i] + captions[i] + closeList;        
         imageList.push(image);
     }
 };
+//console.log(imageList[0]);
 
 //Display 10 images from array
 document.getElementById("photos").innerHTML = imageList.join(" ");

@@ -205,6 +205,7 @@ form .button input {
 
 /* Start photo gallery */
 #gallery {
+    z-index: 1;
     position: relative;
 }
 ul#photos {
@@ -302,11 +303,46 @@ ul#photos {
     padding: 20px 0px 0px 20px;
 }
 
+/* End photo gallery */
 
+/* Start lightbox*/
+#gallery {
+    color: black;
+}
 
+.box {
+    z-index: 2;
+    position: relative;
+    top: -700px;
+    left: 50%;
+    opacity: 1;
+    display: none;
+    transform: translate(-50%, -50%);
+    width: 600px;    
+    height: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 5px #444444;
+    -webkit-box-shadow: 0px 0px 5px #444444;
+    box-shadow: 0px 0px 5px #444444;
+}
 
+.box img {
+    width: 600px;
+    height: 600px;    
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* Start photo gallery */
+* {
+    z-index: 3;
+}
 
-
+.close {
+    float: right;
+    cursor: pointer;
+}
+/* End lightbox*/
 
